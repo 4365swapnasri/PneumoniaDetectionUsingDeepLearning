@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #B3E5FC, #00897B, #9C27B0, #ECEFF1);
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header {
+    background: linear-gradient(to right, #6a0dad, #ffffff); /* Gradient header from violet to white */
+    color: white;
+    padding: 10px 0; /* Reduced padding for a smaller header */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tab-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the tabs */
+}
+
+.tab-menu li {
+    margin: 0 15px;
+}
+
+.tab-menu a {
+    display: block;
+    padding: 10px 15px;
+    background: #6a0dad; /* Violet color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-menu a:hover {
+    background-color: #8a2be2; /* Lighter violet on hover */
+    color: #ffffff; /* White on hover */
+}
+
+.tab-menu a.active {
+    background-color: #8a2be2; /* Active tab color */
+    color: #343a40; /* Dark text for active tab */
+}
+
+section {
+    padding: 30px; /* Increased padding for content */
+    margin: 20px auto;
+    max-width: 900px; /* Wider width for larger pages */
+    background: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h1 {
+    color: #6a0dad; /* Violet color for project title */
+    text-align: center; /* Center the title */
+}
+
+h2 {
+    color: #6a0dad;
+    border-bottom: 2px solid #6a0dad; /* Underline for h2 headings */
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #6a0dad; /* Color for project titles */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold; /* Bold labels for better visibility */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #6a0dad; /* Violet border on focus */
+    outline: none; /* Remove outline */
+}
+
+input[type="submit"] {
+    background: #6a0dad; /* Violet color */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #8a2be2; /* Darker violet on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #333; /* Dark background for footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove default margins */
+}
+
+/* Team Section Styles */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure even spacing between team members */
+    margin-top: 20px; /* Space above team section */
+}
+
+.team-member {
+    background: #f8f9fa; /* Light background for each team member card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 1 30%; /* Take 30% of the width (adjust as needed) */
+    margin: 10px; /* Margin between cards */
+    padding: 15px; /* Padding inside each card */
+    text-align: center; /* Center-align text */
+}
+
+.team-member img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.team-member h4 {
+    margin: 10px 0 5px; /* Space above and below name */
+}
+
+.team-member p {
+    margin: 5px 0; /* Spacing for contact details */
+}
+
+/* Project section styling */
+.project {
+    background: #eceff1; /* Light gray background */
+    border-radius: 5px; /* Rounded corners for projects */
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        margin: 10px; /* Reduce margin for small screens */
+    }
+  
+    .team-member {
+        flex: 0 1 100%; /* Stack team members on mobile */
+    }
+}
