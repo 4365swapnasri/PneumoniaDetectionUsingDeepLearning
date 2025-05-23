@@ -1,4 +1,3 @@
-
 Pneumonia Detection using Deep Learning models to classify chest X-ray images.
 # Pneumonia Detection using Deep Learning
 
